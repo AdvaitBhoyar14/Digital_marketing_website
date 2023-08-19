@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-image: linear-gradient(#000,#2C195D);
+			font-family: Arial, sans-serif;
+			height: 700px;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.t{
+			top: 20px;
+		}
+		.container {
+			position: absolute;
+			bottom: 200px;
+			left: 470px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			top: 20px;
+
+		}
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px;
+			width: 200px;
+		}
+		.card:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+		}
+		.card img {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 10px;
+		}
+		.card h2 {
+			margin-bottom: 10px;
+		}
+		.card p {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		input[type="submit"] {
+		    font-size: 110%;
+		    font-weight: 100;
+		    height: 50px;
+		    background: #2C195D;
+		    border-radius: 20px;
+		    color: #fff;
+				width: 100px;
+		    cursor: pointer;
+		}
+		input[type="submit"]:hover {
+		    background: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<img src="Images\profileo.png">
+			<h2>Admin Login</h2>
+			<p>Login as an administrator to manage the site</p>
+
+	<a href="admin.php"><input type="submit" value="Login"></a>
+		</div>
+		<div class="card">
+			<img src="Images\group.png">
+			<h2>User Login</h2>
+			<p>Login as a user to access your account</p>
+		<a href="login.php"><input type="submit" value="Login" href="">
+		</div>
+	</div>
+</body>
+</html>
